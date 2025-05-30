@@ -25,16 +25,17 @@
 \fi%
 
 \ifx\beamer@ulund@defaultfont\beamer@ulund@defaultfontpalatino%
-  %%%%%%%%%%%% Palatino as rm, Helvetica as sf, courier as tt
-  \usepackage{newpxtext,newpxmath}
-  \usepackage[scaled=.93]{helvet}
-  \usepackage{courier}
+	%%%%%%%%%%%% Palatino as rm, Helvetica as sf, courier as tt
+	\usepackage{newpxtext, newpxmath}
+	\usepackage[scaled=.93]{helvet}
+	\usepackage{courier}
 \fi%
 \ifx\beamer@ulund@defaultfont\beamer@ulund@defaultfontlu%
 	% use LU profile fonts Adobe Garamond and Frutiger Std.
 	% note this requires lualatex or (perhaps?) xelatex
 	\usepackage{fontspec}
-	\usepackage[garamond]{mathdesign}
+	\usepackage{ebgaramond}
+	\usepackage{ebgaramond-maths}
 	\setmainfont[Ligatures=TeX,Numbers={Lining,Proportional}]{AGaramondPro}[
 		Extension       = .otf ,
 		UprightFont     = *-Regular ,
@@ -51,7 +52,7 @@
 
 % If math serif font
 \ifulund@mathseriffont
-\usefonttheme[onlymath]{serif}
+	\usefonttheme[onlymath]{serif}
 \fi
 
 
