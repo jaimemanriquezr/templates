@@ -34,15 +34,23 @@
 	% use LU profile fonts Adobe Garamond and Frutiger Std.
 	% note this requires lualatex or (perhaps?) xelatex
 	\usepackage{fontspec}
+	% OPTION 1:
+	% \usepackage[garamond]{mathdesign}
+	% OPTION 2:
 	\usepackage{ebgaramond}
 	\usepackage{ebgaramond-maths}
+	% OPTION 3:
+	% \usepackage{garamondx}
+	% \usepackage[ebgaramond]{fontsetup}
 	\setmainfont[Ligatures=TeX,Numbers={Lining,Proportional}]{AGaramondPro}[
 		Extension       = .otf ,
 		UprightFont     = *-Regular ,
 		BoldFont        = *-Semibold ,
+		BoldItalicFont = *-BoldItalic,
 		ItalicFont  = *-Italic ]%
 	\setsansfont[Ligatures=TeX]{FrutigerLTStd}[
 		Extension       = .otf ,
+		SmallCapsFont	= *-Condensed ,
 		UprightFont     = *-Light ,
 		BoldFont        = *-Roman ,
 		ItalicFont  = *-LightItalic ]%
