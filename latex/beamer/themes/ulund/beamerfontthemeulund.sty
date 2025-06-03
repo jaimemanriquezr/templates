@@ -44,7 +44,8 @@
 		SmallCapsFont	= *-Condensed ,
 		UprightFont     = *-Light ,
 		BoldFont        = *-Roman ,
-		ItalicFont  = *-LightItalic ]%
+		ItalicFont  = *-LightItalic,
+		BoldFeatures = {SmallCapsFont=*-BoldCondensed}]%
 
 	\setmathfont{Garamond-Math.otf}[StylisticSet={8,9}]
 \fi%
@@ -53,12 +54,12 @@
 
 % If math serif font
 \ifulund@mathseriffont
-	% \usefonttheme[onlymath]{serif}
+	\usefonttheme[onlymath]{serif}
 \fi
 
 
 \setbeamerfont{title}{family=\rmfamily,size=\relsize{+3},series=\mdseries}
-\setbeamerfont{author}{family=\sffamily,size=\relsize{-1},series=\mdseries,shape=\scshape}
+\setbeamerfont{author}{family=\rmfamily,size=\relsize{-1},series=\mdseries,shape=\scshape}
 \setbeamerfont{frametitle}{size=\relsize{+3},family=\rmfamily,series=\mdseries}
 \setbeamerfont{framesubtitle}{parent=frametitle,size=\normalsize}
 
